@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="_1ssp">1.60sp</dimen>
+	<dimen name="_2ssp">3.20sp</dimen>
+	<dimen name="_3ssp">4.80sp</dimen>
+	<dimen name="_4ssp">6.40sp</dimen>
+	<dimen name="_5ssp">8.00sp</dimen>
+	<dimen name="_6ssp">9.60sp</dimen>
+	<dimen name="_7ssp">11.20sp</dimen>
+	<dimen name="_8ssp">12.80sp</dimen>
+	<dimen name="_9ssp">14.40sp</dimen>
+	<dimen name="_10ssp">16.00sp</dimen>
+	<dimen name="_11ssp">17.60sp</dimen>
+	<dimen name="_12ssp">19.20sp</dimen>
+	<dimen name="_13ssp">20.80sp</dimen>
+	<dimen name="_14ssp">22.40sp</dimen>
+	<dimen name="_15ssp">24.00sp</dimen>
+	<dimen name="_16ssp">25.60sp</dimen>
+	<dimen name="_17ssp">27.20sp</dimen>
+	<dimen name="_18ssp">28.80sp</dimen>
+	<dimen name="_19ssp">30.40sp</dimen>
+	<dimen name="_20ssp">32.00sp</dimen>
+	<dimen name="_21ssp">33.60sp</dimen>
+	<dimen name="_22ssp">35.20sp</dimen>
+	<dimen name="_23ssp">36.80sp</dimen>
+	<dimen name="_24ssp">38.40sp</dimen>
+	<dimen name="_25ssp">40.00sp</dimen>
+	<dimen name="_26ssp">41.60sp</dimen>
+	<dimen name="_27ssp">43.20sp</dimen>
+	<dimen name="_28ssp">44.80sp</dimen>
+	<dimen name="_29ssp">46.40sp</dimen>
+	<dimen name="_30ssp">48.00sp</dimen>
+	<dimen name="_31ssp">49.60sp</dimen>
+	<dimen name="_32ssp">51.20sp</dimen>
+	<dimen name="_33ssp">52.80sp</dimen>
+	<dimen name="_34ssp">54.40sp</dimen>
+</resources>

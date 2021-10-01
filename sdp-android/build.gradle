@@ -70,16 +70,57 @@ class SDPFactory extends DefaultTask {
     }
 }
 
+
+class SSPFactory extends DefaultTask {
+
+    @Input
+    String unit = "sp"
+    @Input
+    double positiveMax = 100
+
+    @TaskAction
+    def create() {
+        String resFolder = project.getProjectDir().getPath() + "/src/main/res/"
+        for (double dimen = 300; dimen <= 800; dimen = dimen + 30) {
+            createPositive(resFolder, dimen)
+        }
+        createPositive(resFolder, 1080)
+    }
+
+    private void createPositive(String resFolder, double dimen) {
+        String folder = resFolder + "values-sw" + (int) dimen + "dp"
+        String fileName = folder + "/positive_ssps.xml"
+        new File(folder).mkdir()
+        new File(fileName).createNewFile()
+        PrintWriter printWriter = new PrintWriter(fileName)
+        printWriter.println("<?xml version=\"1.0\" encoding=\"utf-8\"?>")
+        printWriter.println("<resources>")
+        for (int i = 1; i <= positiveMax; i++) {
+            double ratio = i / 375d
+            double ssp = ratio * dimen
+            printWriter.printf("\t<dimen name=\"_%dssp\">%.2f" + unit + "</dimen>\r\n", i, ssp)
+        }
+        printWriter.println("</resources>")
+        printWriter.close()
+    }
+}
+
 task createSDP(type: SDPFactory) {
 }
 
-//uncomment next line to edit values
-//preBuild.dependsOn createSDP
+task createSSP(type: SSPFactory) {
+}
+
+createSSP {
+    unit = "sp"
+    positiveMax = 34
+}
+
 
 createSDP {
-    unit = "dp"//change to "sp" if needed
-    positiveMax = 350//change to 600 or any other value if needed
-    negativeMax = 30//change to 600 or any other value if needed
+    unit = "dp"
+    positiveMax = 350
+    negativeMax = 30
 }
 
 signing {
