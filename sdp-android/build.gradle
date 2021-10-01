@@ -12,6 +12,7 @@ buildscript {
     }
 }
 
+group = 'com.github.madmax3365'
 
 android {
     compileSdkVersion 31
